@@ -2,7 +2,10 @@ package com.regg.library;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.system.JavaVersion;
+import org.springframework.boot.system.SystemProperties;
 import org.springframework.context.annotation.Bean;
+import org.springframework.core.SpringVersion;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
@@ -14,6 +17,9 @@ public class LibraryApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LibraryApplication.class, args);
+		System.out.println("SpringVersion:" + SpringVersion.getVersion());
+		System.out.println("JDK Version: " + SystemProperties.get("java.version"));
+		System.out.println("Java Version: " + JavaVersion.getJavaVersion().toString());
 	}
 
 
