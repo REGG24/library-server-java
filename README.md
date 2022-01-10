@@ -6,4 +6,4 @@ Library Server Java
 It simulates the basic functions of a library; there are 7 entities: Author, Book, Client, Employee, Loan, Return and Sale, and each one of them has its own functionalities:
 
 -CRUD operations (Create, Register, Update and Delete) using JPA and Hibernate  
--Unit tests for all operations using JUnit and MockMVC  
+-Unit tests for all operations using JUnit and MockMvc   
